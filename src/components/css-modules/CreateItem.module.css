@@ -1,0 +1,54 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  margin: 0.2rem 0;
+  color: var(--color-text);
+}
+.list {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  margin-top: 0.1rem;
+  padding: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.text {
+  flex: 1 1 auto;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-grey);
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  transition: all 130ms ease-out;
+}
+
+.icon:hover {
+  background-color: var(--color-accent);
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(120%) rotate(30deg);
+}

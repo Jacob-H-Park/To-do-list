@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  min-height: 0;
+  /* min-height set at 0 doesn't push the header and the input field when it overflows */
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--color-bg);
+}
