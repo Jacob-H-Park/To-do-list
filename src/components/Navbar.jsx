@@ -1,5 +1,3 @@
-import { MdDarkMode } from "react-icons/md";
-
 import { BsMoonStarsFill, BsBrightnessHighFill } from "react-icons/bs";
 import { useDarkMode } from "../context/DarkmodeContext";
 import styles from "./css-modules/Navbar.module.css";
@@ -8,7 +6,7 @@ const Navbar = ({ status, setStatus }) => {
   const { darkMode, toggleDarkMode } = useDarkMode();
   const menu = ["All", "Active", "Completed"];
   const today = new Date();
-  const [day, month, date, year] = today.toDateString().split(" ");
+  const [day, month, date] = today.toDateString().split(" ");
   console.log(status);
   return (
     <header className={styles.header}>

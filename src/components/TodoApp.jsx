@@ -1,6 +1,6 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { TodoContext } from "../context/TodoStateContext";
-import todoReducer from "../reducer/todo-reducer";
+
 import TodoList from "./TodoList";
 import UserTodoInput from "./UserTodoInput";
 import styles from "./css-modules/TodoApp.module.css";

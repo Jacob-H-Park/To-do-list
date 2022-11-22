@@ -1,4 +1,4 @@
-import { useState, useEffect, useReducer, createContext } from "react";
+import { useReducer, createContext } from "react";
 import todoReducer from "../reducer/todo-reducer";
 
 export const TodoContext = createContext();
