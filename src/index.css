@@ -8,6 +8,14 @@
 }
 * {
   box-sizing: border-box;
+  font-family: "Neucha", cursive;
+}
+
+:root.dark {
+  --color-bg-dark: #1a1c35;
+  --color-bg: #22243b;
+  --color-grey: #4e4e4e;
+  --color-text: #fdfffd;
 }
 
 body {
@@ -47,7 +55,7 @@ button {
   align-items: center; */
   width: 70vw;
   height: 80vh;
-  max-width: 700px;
+  max-width: 600px;
   margin-bottom: 50px;
   background-color: var(--color-bg-dark);
   overflow: hidden;
@@ -57,6 +65,10 @@ button {
   -moz-box-shadow: 1px 1px 61px 0px rgba(235, 123, 123, 0.47);
 }
 code {
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */

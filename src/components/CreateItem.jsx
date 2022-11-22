@@ -20,13 +20,13 @@ const CreateItem = ({ todo, dispatch }) => {
       />
       <span className={styles.text}>{todo.name}</span>
 
-      <span className={styles.icon}>
-        <button
-          className={styles.button}
-          onClick={() => {
-            dispatch({ type: "DELETE", todo });
-          }}
-        >
+      <span
+        onClick={() => {
+          dispatch({ type: "DELETE", todo });
+        }}
+        className={styles.icon}
+      >
+        <button className={styles.button}>
           <BsTrash />
         </button>
       </span>

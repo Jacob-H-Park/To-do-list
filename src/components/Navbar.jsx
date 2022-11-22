@@ -1,17 +1,19 @@
-import { useContext } from "react";
-import { TodoContext } from "../context/TodoStateContext";
-import { CgDarkMode } from "react-icons/cg";
+import { MdDarkMode } from "react-icons/md";
+
+import { BsMoonStarsFill, BsBrightnessHighFill } from "react-icons/bs";
+import { useDarkMode } from "../context/DarkmodeContext";
 import styles from "./css-modules/Navbar.module.css";
 
 const Navbar = ({ status, setStatus }) => {
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const menu = ["All", "Active", "Completed"];
   const today = new Date();
   const [day, month, date, year] = today.toDateString().split(" ");
   console.log(status);
   return (
     <header className={styles.header}>
-      <button className={styles.darkmodeButton}>
-        <CgDarkMode />
+      <button onClick={toggleDarkMode} className={styles.darkmodeButton}>
+        {darkMode ? <BsMoonStarsFill /> : <BsBrightnessHighFill />}
       </button>
       <span className={styles.date}>{`${month} ${date} - ${day}`}</span>
       <ul className={styles.tabs}>

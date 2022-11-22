@@ -10,19 +10,34 @@
 }
 
 .date {
-  font-size: 1.4rem;
-  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
   padding-left: 4rem;
   color: var(--color-accent);
-  font-weight: bold;
+  font-weight: bolder;
   opacity: 0.75;
 }
 
 .darkmodeButton {
+  cursor: pointer;
   font-size: 1.5rem;
   padding-top: 0.5rem;
   background-color: transparent;
   color: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .darkmodeButton {
+    animation: dark-mode-button-spin infinite 15s linear;
+  }
+}
+
+@keyframes dark-mode-button-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .tabs {
